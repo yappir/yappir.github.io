@@ -2,7 +2,7 @@
 <html class="h-full">
 
 <head>
-    <title>{{ site.title }}</title>
+    <title>{{ page.title | default: site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
     <link href="/static/global.css" rel="stylesheet">
