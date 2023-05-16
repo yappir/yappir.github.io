@@ -1,0 +1,27 @@
+---
+layout: default
+title: Help - Yappir
+---
+
+<main class="page">
+    <h1 class="page-title">Getting Started</h1>
+    <h2 class="page-subsection">The Basics</h2>
+    <ul>
+        {% assign articles = site.help | sort: article.title %}
+        {% for article in articles %}
+        {% if article.categories contains 'basic' %}
+        <li><a href="{{article.url}}">{{article.title}}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    <h2 class="page-subsection">Troubleshooting</h2>
+    <ul>
+        {% assign articles = site.help | sort: article.title %}
+        {% for article in articles %}
+        {% if article.categories contains 'troubleshooting' %}
+        <li><a href="{{article.url}}">{{article.title}}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</main>
+{% include support.html %}

@@ -1,5 +1,5 @@
 title: Yappir - build a chatbot in minutes
-email: no-reply@example.com
+email: support@yappir.com
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://yappir.com" # the base hostname & protocol for your site, e.g. http://example.com
@@ -8,6 +8,14 @@ url: "https://yappir.com" # the base hostname & protocol for your site, e.g. htt
 theme: minima
 plugins:
   - jekyll-feed
+
+permalink: /:categories/:title:output_ext
+
+collections:
+  help:
+    output: true
+    permalink: /:collection/article/:name
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
