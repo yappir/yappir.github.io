@@ -1,6 +1,6 @@
 
-serve() {
-    reflex -c reflex.conf
+run() {
+    bundle exec -- jekyll serve
 }
 
 func=$1
