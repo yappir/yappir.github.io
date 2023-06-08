@@ -330,10 +330,6 @@ body {
   padding-top: 0.5rem;
 }
 
-.page-links a {
-  text-decoration: underline;
-}
-
 .page-title {
   font-size: 2.5rem;
   font-weight: 900;
@@ -350,6 +346,10 @@ body {
   margin-bottom: 1rem;
   color: var(--text-subdued);
   text-align: center;
+}
+
+.toc a {
+  text-decoration: underline;
 }
 
 .toc {
